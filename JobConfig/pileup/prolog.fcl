@@ -297,6 +297,7 @@ Pileup: {
     spectrum: {
       spectrumShape: tabulated
       spectrumFileName: "Offline/EventGenerator/data/neutronSpectrum.txt"
+      BinCenter : true
     }
   }
 
