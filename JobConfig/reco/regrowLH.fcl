@@ -31,6 +31,8 @@ physics : {
       StrawDigiCollectionTag  : "SelectReco"
       StrawDigiADCWaveformCollectionTag : "SelectReco"
     }
+  }
+  filters : {
     RegrowLH : {
       @table::Mu2eKinKal.RegrowLH
       KalSeedCollection : KKDe
