@@ -4,4 +4,4 @@
 #include "Production/JobConfig/reco/regrowLH.fcl"
 physics.filters.RegrowLH.KalSeedMCAssns : "SelectReco"
 physics.filters.RegrowLH.CopyKalSeedMCs : false
-outputs.RegrowOutout.fileName: "mcs.owner.RegrowLH.version.sequencer.art"
+outputs.RegrowOutput.fileName: "mcs.owner.RegrowLH.version.sequencer.art"

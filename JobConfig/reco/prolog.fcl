@@ -403,7 +403,6 @@ Reconstruction.RegrowOutput : {
     @sequence::Reconstruction.GeneralProducts,
     @sequence::Reconstruction.HighRecoProducts,
     @sequence::Reconstruction.MidRecoProducts,
-    "drop *_*_*_Mix",
     "drop *_*_*_Reconstruct",
     "keep *_EWMProducer_*_*",
     "keep *_PBISim_*_*",
