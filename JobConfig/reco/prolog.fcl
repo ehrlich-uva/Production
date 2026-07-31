@@ -400,6 +400,7 @@ Reconstruction.RegrowOutput : {
   module_type : RootOutput
   fileName    : @nil
   outputCommands : [
+    "drop *_*_*_*",
     @sequence::Reconstruction.GeneralProducts,
     @sequence::Reconstruction.HighRecoProducts,
     @sequence::Reconstruction.MidRecoProducts,
