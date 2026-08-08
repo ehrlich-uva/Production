@@ -115,6 +115,7 @@ physics.trigger_paths : [ RePath, RmuPath ]
 outputs.RefOutpute : {
   @table::Reconstruction.Output
   SelectEvents : [RePath]
+  fileName : "mcs.user.RegrownReflectione.config.seq.art"
   outputCommands: [ @sequence::Reconstruction.Output.outputCommands,
   "drop mu2e::*_KK*_*_*",
   "drop mu2e::KalSeeds_K*_*_*",
@@ -126,7 +127,7 @@ outputs.RefOutpute : {
 
 outputs.RefOutputmu : {
   @table::Reconstruction.Output
-  fileName : "/data/HD6/users/brownd/mcs.brownd.RefRegrowmu.art"
+  fileName : "mcs.user.RegrownReflectionmu.config.seq.art"
   SelectEvents : [RmuPath]
   outputCommands: [ @sequence::Reconstruction.Output.outputCommands,
   "drop mu2e::*_KK*_*_*",
