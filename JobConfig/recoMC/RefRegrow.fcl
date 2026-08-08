@@ -43,6 +43,10 @@ physics.filters : {
 
   RegrowKKe : {
     @table::Mu2eKinKal.RegrowLH
+    ExtrapolationSettings :{
+      @table::Mu2eKinKal.LHDRIFTXTRAP
+      BackToTracker : true
+    }
     KalSeedMCAssns : "SelectReco"
     CopyKalSeedMCs : true
     KalSeedPtrCollection : Reflecte
@@ -52,6 +56,10 @@ physics.filters : {
 
   RegrowKKmu : {
     @table::Mu2eKinKal.RegrowLH
+    ExtrapolationSettings :{
+      @table::Mu2eKinKal.LHDRIFTXTRAP
+      BackToTracker : true
+    }
     KalSeedMCAssns : "SelectReco"
     CopyKalSeedMCs : true
     KalSeedPtrCollection : Reflectmu
