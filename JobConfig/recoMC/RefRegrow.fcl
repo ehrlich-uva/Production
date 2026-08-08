@@ -25,6 +25,7 @@ physics.filters : {
     @table::TrkReco.filters.SelectReflections
     UpstreamKalSeedCollection : "RegrowKKe"
     DownstreamKalSeedCollection : "RegrowKKe"
+    ReflectionTestDirection : "Both" # Require both direction to have a reflection match
   }
 
   Reflectmu : {
@@ -37,6 +38,7 @@ physics.filters : {
     @table::TrkReco.filters.SelectReflections
     UpstreamKalSeedCollection : "RegrowKKmu"
     DownstreamKalSeedCollection : "RegrowKKmu"
+    ReflectionTestDirection : "Both" # Require both direction to have a reflection match
   }
 
   RegrowKKe : {
