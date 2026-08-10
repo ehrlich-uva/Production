@@ -38,8 +38,8 @@ physics: {
   IPAEndRingStopPath : [ @sequence::Pileup.beamResamplerSequence, @sequence::Common.g4Sequence, IPAEndRingMuonFinder, IPAEndRingStopFilter, compressPVIPAEndRingStops]
   flashPath : [ @sequence::Pileup.beamResamplerSequence, @sequence::Common.g4Sequence, @sequence::Pileup.flashSequence, @sequence::Pileup.DetStepSequence ]
   earlyFlashPath : [ @sequence::Pileup.beamResamplerSequence, @sequence::Common.g4Sequence, @sequence::Pileup.flashSequence, @sequence::Pileup.EarlyDetStepSequence ]
-  trigger_paths: [ flashPath, earlyFlashPath, targetStopPath, polyStopPath, IPAStopPath, IPAEndRingStopPath ]
-  outPath : [ FlashOutput, EarlyFlashOutput, TargetStopOutput, PolyStopOutput, IPAStopOutput, IPAEndRingStopOutput ]
+  trigger_paths: [ flashPath, earlyFlashPath, targetStopPath, polyStopPath, IPAStopPath ]
+  outPath : [ FlashOutput, EarlyFlashOutput, TargetStopOutput, PolyStopOutput, IPAStopOutput ]
   end_paths: [outPath]
 }
 
@@ -72,12 +72,12 @@ outputs: {
   }
 
   IPAEndRingStopOutput : {
-    module_type : RootOutput
+    module_type: RootOutput
     outputCommands: [ "drop *_*_*_*",
       @sequence::Pileup.SimKeptProducts
      ]
-     SelectEvents : [IPAEndRingStopPath]
-     fileName : "sim.owner.IPAEndRingStops.version.sequencer.art"
+     SelectEvents: [IPAEndRingStopPath]
+     fileName: "sim.owner.IPAEndRingStops.version.sequencer.art"
   }
 
   FlashOutput : {

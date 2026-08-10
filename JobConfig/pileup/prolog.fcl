@@ -232,7 +232,6 @@ Pileup: {
       wrapFiles: true
       mu2e: {
         writeEventIDs : true
-        //MaxEventsToSkip: @nil
         MaxEventsToSkip: 0
         debugLevel : 0
         products: {
@@ -258,8 +257,7 @@ Pileup: {
       wrapFiles: true
       mu2e: {
         writeEventIDs : true
-        //MaxEventsToSkip:  @nil
-        MaxEventsToSkip: 0
+        MaxEventsToSkip:  @nil
         debugLevel : 0
         products: {
           genParticleMixer: { mixingMap: [ [ "generate", "" ] ] }
