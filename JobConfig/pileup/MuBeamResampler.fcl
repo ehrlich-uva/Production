@@ -75,9 +75,9 @@ outputs: {
     module_type: RootOutput
     outputCommands: [ "drop *_*_*_*",
       @sequence::Pileup.SimKeptProducts
-     ]
-     SelectEvents: [IPAEndRingStopPath]
-     fileName: "sim.owner.IPAEndRingStops.version.sequencer.art"
+    ]
+    SelectEvents: [IPAEndRingStopPath]
+    fileName: "sim.owner.IPAEndRingStops.version.sequencer.art"
   }
 
   FlashOutput : {
