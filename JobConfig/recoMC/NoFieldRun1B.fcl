@@ -1,8 +1,13 @@
 #
-# Extracted = NoField with shifted geometry
+# Run1B reconstruction with no solenoid field: straight-line tracking with
+# the extracted-position CRV configuration.
+#
+# The geometry below is the Run1B production geometry.  Every production
+# caller overrides services.GeometryService.inputFile explicitly, so this
+# default applies to bare running only.
 #
 #include "Production/JobConfig/recoMC/NoField.fcl"
-services.GeometryService.inputFile  : "Offline/Mu2eG4/geom/geom_run1_b_v01.txt"
+services.GeometryService.inputFile  : "Offline/Mu2eG4/geom/geom_run1_b_v40.txt"
 physics.producers.KKLine.ModuleSettings.SampleSurfaces : [ @sequence::physics.producers.KKLine.ModuleSettings.SampleSurfaces, "TCRV" ] #temporary until extrapolation is working
 #include "Offline/CRVReco/fcl/epilog_extracted.fcl"
 
