@@ -84,12 +84,12 @@ Mixing : {
     CaloDtsClusterFilter : {
       module_type : CaloDtsClusterFilter
       CaloShowerSteps        : ["compressDetStepMCs", "MuStopPileupMixer", "EleBeamFlashMixer", "MuBeamFlashMixer", "NeutralsFlashMixer"]
-      MinimumStepEnergy      : 0.
-      MinimumStepTime        : 400.
-      MaximumStepTime        : 1.e6 # can't do fmod(time, 1695) accurately at high times
-      MinimumClusterEnergy   : 50.
-      TimeWindow             : 100.
-      SpaceWindow            : 80.
+      MinimumStepEnergy      : 0.   # MeV
+      MinimumStepTime        : 400. # ns
+      MaximumStepTime        : 1.e6 # ns, can't do fmod(time, 1695) accurately at high times
+      MinimumClusterEnergy   : 50.  # MeV
+      TimeWindow             : 100. # ns
+      SpaceWindow            : 80.  # mm
       NullFilter             : true # Default to off
       DiagLevel              : 0
     }
